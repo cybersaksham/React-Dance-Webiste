@@ -1,0 +1,38 @@
+#aboutSection {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 25px;
+}
+
+#aboutSection::before {
+  content: "";
+  height: 80vh;
+  background: url("../Gallery/about_bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 5vh;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+#aboutSection p {
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+}
+
+#serviceSection {
+  background-color: yellow;
+  height: 20vh;
+}
+
+#sponserSection {
+  background-color: green;
+  height: 20vh;
+}
