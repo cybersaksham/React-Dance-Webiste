@@ -29,3 +29,31 @@ nav {
 footer {
   height: 5vh;
 }
+
+@media only screen and (max-height: 600px) {
+  nav {
+    height: 8vh;
+  }
+
+  #mainBody {
+    min-height: 84vh;
+  }
+
+  footer {
+    height: 8vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  nav {
+    height: 12vh;
+  }
+
+  #mainBody {
+    min-height: 76vh;
+  }
+
+  footer {
+    height: 12vh;
+  }
+}

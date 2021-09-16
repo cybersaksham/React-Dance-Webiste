@@ -36,3 +36,9 @@ nav ul li :hover {
 .activeTabs a {
   color: white !important;
 }
+
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+}
