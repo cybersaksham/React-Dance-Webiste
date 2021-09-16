@@ -1,0 +1,16 @@
+{
+  "name": "react-dance-website",
+  "version": "1.0.0",
+  "description": "This project is made by react js framework. This is a simple dance website with contact form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "both": "concurrently \"npm --prefix ./frontend start\" \"nodemon ./backend/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
