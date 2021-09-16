@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+nav {
+  background-color: #ca8e8e;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 10px 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li :hover {
+  color: white;
+}
+
+.activeTabs {
+  color: white !important;
+}
