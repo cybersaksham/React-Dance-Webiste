@@ -2,6 +2,7 @@ const connectToMongo = require("./db");
 const express = require("express");
 const { body, validationResult } = require("express-validator");
 const cors = require("cors");
+const Contact = require("./Models/Contact");
 
 // Connecting to database
 connectToMongo();
@@ -34,7 +35,17 @@ app.post(
       return res.status(400).json({ error: errors.array()[0].msg });
     }
 
-    res.send(req.body);
+    try {
+      // Creating Contact
+      const contact = new Contact(req.body);
+
+      // Saving Contact
+      const savedContact = await contact.save();
+
+      return res.json(savedContact);
+    } catch (error) {
+      return res.status(500).send({ error: "Internal Server Error" });
+    }
   }
 );
 
