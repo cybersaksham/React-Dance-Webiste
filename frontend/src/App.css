@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +12,18 @@ nav {
 
 #mainBody {
   min-height: 90vh;
+}
+
+#mainBody::before {
+  content: "";
+  background: url("./Gallery/about_bg.jpg") no-repeat center center/cover;
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 footer {

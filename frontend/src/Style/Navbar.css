@@ -4,6 +4,7 @@ nav {
   top: 0px;
   left: 0px;
   z-index: 1000;
+  opacity: 0.8;
 }
 
 nav ul {

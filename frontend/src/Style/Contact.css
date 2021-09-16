@@ -21,8 +21,9 @@
   padding: 5px 9px;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: #ca8e8e;
+  background-color: #34157a;
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  color: white;
 }
