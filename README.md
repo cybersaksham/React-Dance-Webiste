@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# React Dance Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is made by react js framework. This is a simple dance website with contact form.
 
-## Available Scripts
+## Development server
 
-In the project directory, you can run:
+### Linux
 
-### `npm start`
+<li>Installing node js & nodemon</li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```cmd
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
+nvm install node
+npm install -g nodemon
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<li>Installing mongodb</li>
 
-### `npm test`
+```cmd
+sudo apt-get install gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>Downloading project code & running server</li>
 
-### `npm run build`
+```cmd
+git clone https://github.com/cybersaksham/React-Dance-Website
+cd React-Dance-Website
+npm --prefix ./backend install
+npm --prefix ./frontend install
+npm install
+sudo service mongod start
+npm run both
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>Uninstalling Code</li>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+First stop server by ctrl+C.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```cmd
+sudo service mongod stop
+cd ..
+rm -rf React-Dance-Website
+```
 
-### `npm run eject`
+### Windows
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>Install node js from https://nodejs.org/en/</p>
+<p>Install mongodb from https://www.mongodb.com/try/download/community</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<li>Installing nodemon</li>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```cmd
+npm install -g nodemon
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<li>Downloading project code & running server</li>
 
-## Learn More
+```cmd
+git clone https://github.com/cybersaksham/React-Dance-Website
+cd React-Dance-Website
+npm --prefix ./backend install
+npm --prefix ./frontend install
+npm install
+npm run both
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<li>Uninstalling Code</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+First stop server by ctrl+C.
 
-### Code Splitting
+```cmd
+cd ..
+rmdir /S React-Dance-Website
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Note
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can download mongodb compass to visualize your database from https://www.mongodb.com/try/download/compass
