@@ -9,10 +9,16 @@
   background: url("../Gallery/about_bg.jpg") no-repeat center center/cover;
 }
 
-#aboutSection p {
+#aboutSection h1 {
   font-size: 2rem;
-  font-family: "Anton", sans-serif;
+  font-family: "Prompt", sans-serif;
   letter-spacing: 3px;
+  color: white;
+}
+
+#aboutSection p {
+  font-size: 1.3rem;
+  font-family: "Prompt", sans-serif;
   color: white;
 }
 
