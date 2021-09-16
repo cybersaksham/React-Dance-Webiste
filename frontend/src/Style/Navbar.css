@@ -1,5 +1,9 @@
 nav {
   background-color: #3d1992;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 
 nav ul {
