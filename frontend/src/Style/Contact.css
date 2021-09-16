@@ -1,0 +1,28 @@
+#contactForm {
+  margin: auto;
+  margin-top: 20px;
+  height: 80vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactForm input {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+#contactForm button {
+  padding: 5px 9px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ca8e8e;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
