@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from "./Components/Contact";
 import ContactState from "./Context/Contact/ContactState";
 import Home from "./Components/Home";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </Router>
     </ContactState>
   );
