@@ -1,15 +1,18 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../Style/Navbar.css";
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <nav>
       <ul>
-        <li>
-          <a href="/">Home</a>
+        <li className={location.pathname === "/" ? "activeTabs" : ""}>
+          <Link to="/">Home</Link>
         </li>
-        <li>
-          <a href="/contact">Contact</a>
+        <li className={location.pathname === "/contact" ? "activeTabs" : ""}>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

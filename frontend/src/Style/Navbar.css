@@ -28,6 +28,6 @@ nav ul li :hover {
   color: white;
 }
 
-.activeTabs {
+.activeTabs a {
   color: white !important;
 }
